@@ -1,0 +1,106 @@
+body {
+	background-color:#fefefe;
+}
+
+h1 {
+	text-align:center;
+	margin-top:50px;
+	font-family: "PierceRoman";
+	font-weight: normal;
+	font-style: normal;
+	font-size:45px;
+	color:#c41639;
+}
+h2 {
+	text-align:center;
+	font-family: "Times New Roman", Times, serif;
+	font-size:23px;
+	color:#c41639;
+	font-style:italic;
+}
+p {
+	margin-left:500px;
+	margin-right:500px;
+	margin-bottom:40px;
+	text-align:center;
+	font-family: "Times New Roman", Times, serif;
+	font-size:15px;
+    color:#c41639;
+}
+
+a {
+	text-decoration:none;
+	color:#8cbded;
+}
+a:link {
+	color:rgb(107, 186, 228);
+}
+a:visited {
+	color:rgb(107, 186, 228);
+}
+a:hover {
+	color:rgb(255, 8, 0);
+}
+
+.taille:hover {
+	font-size:40px;
+}
+.ombre {
+	text-shadow: 2px 4px 6px;
+	color: transparent;
+}
+pre {
+	text-align: center;
+	margin-left: 50px;
+}
+
+.boule {
+    position: absolute;
+    top: 0; 
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: red; 
+    transform-origin: top center;
+    animation: balancement 4s infinite ease-in-out alternate;
+}
+
+.boule::before {
+    content: "";
+    position: absolute;
+    top: -60px; 
+    left: 50%;
+    width: 2px;
+    height: 60px;
+    background: #333;
+    transform: translateX(-50%);
+}
+
+.boule:nth-child(1) { left: 5%; background: red; animation-delay: 0s; }
+.boule:nth-child(2) { left: 15%; background: gold; animation-delay: 0.5s; }
+.boule:nth-child(3) { left: 25%; background: blue; animation-delay: 1s; }
+.boule:nth-child(4) { left: 35%; background: green; animation-delay: 1.2s; }
+.boule:nth-child(5) { left: 45%; background: red; animation-delay: 0.7s; }
+.boule:nth-child(6) { left: 55%; background: gold; animation-delay: 1.5s; }
+.boule:nth-child(7) { left: 65%; background: blue; animation-delay: 1.1s; }
+.boule:nth-child(8) { left: 75%; background: green; animation-delay: 0.3s; }
+.boule:nth-child(9) { left: 85%; background: red; animation-delay: 1.8s; }
+.boule:nth-child(10){ left: 95%; background: gold; animation-delay: 0.9s; }
+
+@keyframes balancement {
+    0% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(-10deg); }
+}
+
+.bleu {
+    color:blue;
+}
+
+.vert {
+    color:green;
+}
+
+.jaune{
+    color:rgb(255, 213, 1); 
+}
